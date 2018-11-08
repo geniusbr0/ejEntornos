@@ -30,16 +30,21 @@ public class Howyoudoin {
        
        letra=Character.toUpperCase(letra);
        
-           for(int i=0;i<cadena.length();i++){
-               
-               if(cadena.charAt(i)==letra){
-                   cont++;
-               }
-               
-           }
+        cont = function(cadena, letra, cont);
        System.out.println("hay "+cont+" letras que son "+letra);
            
            
    }
+
+    public static int function(String cadena, char letra, int cont) {
+        for(int i=0;i<cadena.length();i++){
+            
+            if(cadena.charAt(i)==letra){
+                cont++;
+            }
+            
+        }
+        return cont;
+    }
    
 }
